@@ -4,173 +4,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Personal Portfolio Website Design.</title>
+    <title>Manasi Patro | Flutter Developer</title>
+    <meta name="description" content="Manasi Patro - Flutter Developer building cross-platform apps for Android, iOS and Web.">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Manasi's Portfolio</a>
+        <a href="#home" class="logo">Manasi<span>.</span></a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#skills">Skill</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#contact ">Contact </a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello,It's Me</h3>
+            <h3>Hello, It's Me</h3>
             <h1>Manasi Patro</h1>
-            <h3>And I'm a <span>Passionate Web Developer</span></h3>
-            <p>I am flexible, reliable and possess excellent time keeping skills.</p>
-            <div class="Social-media">
-                <a href="#"><i class='bx bxl-telegram'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Flutter Developer skilled in building scalable, cross-platform apps for Android, iOS and Web —
+                with hands-on experience in Node.js, REST APIs, MongoDB and AI/LLM integrations.</p>
+
+            <div class="social-media">
+                <a href="https://github.com/70mansipatro" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/t-b-manasi-patro-6a5086290" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:manasipatro3@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+                <a href="tel:+919337131520" aria-label="Phone"><i class='bx bx-phone'></i></a>
             </div>
-            <a href="#" class="btn">Download Resume</a>
+
+            <div class="btn-group">
+                <a href="resume.html" class="btn" target="_blank" rel="noopener">Download Resume</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
         </div>
 
-        <div class="home.img">
-            <img src="https://media.licdn.com/dms/image/D5612AQGA36k3PvzLNA/article-cover_image-shrink_600_2000/0/1673002078258?e=2147483647&v=beta&t=s6FqmcZXHw-Go5ogoYI8n3c76YwVMexVpdmlwT5_arY"
-                alt="">
+        <div class="home-img">
+            <div class="avatar-ring">
+                <div class="avatar">MP</div>
+            </div>
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="https://media.licdn.com/dms/image/D5612AQGA36k3PvzLNA/article-cover_image-shrink_600_2000/0/1673002078258?e=2147483647&v=beta&t=s6FqmcZXHw-Go5ogoYI8n3c76YwVMexVpdmlwT5_arY"
-                alt="">
+            <div class="avatar-ring small">
+                <div class="avatar">MP</div>
+            </div>
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>Learning programmer motivated and excited for the oppertunity to obtain a Web-Developer position that
-                utilizes my skills and education to change myself and attain an intellectually satisfying and meaningful
-                position.And also i am a mature team worker and adaptable to all challenging situations.i am able to
-                work
-                well both in a team environment as well as using own initiative. Thank you for visiting my portfolio..
-            </p>
+            <h3>Flutter Developer</h3>
+            <p>Passionate Flutter Developer with experience building cross-platform mobile applications for
+                Android, iOS and Web. I enjoy turning ideas into polished, user-friendly products — from
+                authentication and REST API integration to AI-powered document processing — and I'm always
+                looking to contribute to innovative, fast-moving development teams.</p>
 
-            <a href="#" class="btn">Read More</a>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>4+</h3>
+                    <p>Internships &amp; Roles</p>
+                </div>
+                <div class="stat-box">
+                    <h3>20+</h3>
+                    <p>Projects Built</p>
+                </div>
+                <div class="stat-box">
+                    <h3>9.0</h3>
+                    <p>CGPA (MCA)</p>
+                </div>
+            </div>
+
+            <a href="resume.html" class="btn" target="_blank" rel="noopener">Read Full Resume</a>
         </div>
     </section>
 
     <section class="skills" id="skills">
-        <h2 class="heading">My<span> Skills</span></h2>
+        <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="skills-container">
             <div class="skills-box">
+                <i class="bx bx-mobile-alt"></i>
+                <h3>Mobile Development</h3>
+                <div class="chip-group">
+                    <span class="chip">Flutter</span>
+                    <span class="chip">Android</span>
+                    <span class="chip">iOS</span>
+                    <span class="chip">Responsive UI</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
                 <i class="bx bx-code-alt"></i>
-                <h3>JAVA</h3>
-                <p>I have gained some knowledge about basic of java programming such as syntax, array , string , data
-                    type, class & objects</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Languages</h3>
+                <div class="chip-group">
+                    <span class="chip">Dart</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-server"></i>
+                <h3>Backend</h3>
+                <div class="chip-group">
+                    <span class="chip">Node.js</span>
+                    <span class="chip">Express.js</span>
+                    <span class="chip">REST API</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-data"></i>
+                <h3>Databases</h3>
+                <div class="chip-group">
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Firebase</span>
+                    <span class="chip">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-git-branch"></i>
+                <h3>State Management</h3>
+                <div class="chip-group">
+                    <span class="chip">Provider</span>
+                    <span class="chip">GetX</span>
+                    <span class="chip">Riverpod</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-bot"></i>
+                <h3>AI &amp; LLM Integration</h3>
+                <div class="chip-group">
+                    <span class="chip">OpenAI API</span>
+                    <span class="chip">Google Gemini API</span>
+                    <span class="chip">Prompt Engineering</span>
+                    <span class="chip">OCR Document Processing</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-lock-alt"></i>
+                <h3>Concepts</h3>
+                <div class="chip-group">
+                    <span class="chip">JWT Auth</span>
+                    <span class="chip">RBAC</span>
+                    <span class="chip">CRUD</span>
+                    <span class="chip">Barcode / QR</span>
+                    <span class="chip">Google Maps</span>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <i class="bx bx-git-repo-forked"></i>
+                <h3>Tools &amp; DevOps</h3>
+                <div class="chip-group">
+                    <span class="chip">Git &amp; GitHub</span>
+                    <span class="chip">CI/CD</span>
+                    <span class="chip">VS Code</span>
+                    <span class="chip">Android Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Nov 2025 — Present</span>
+                    <h3>Software Developer · Intelibytes Tech</h3>
+                    <ul>
+                        <li>Developed Flutter applications for Android, iOS and Web.</li>
+                        <li>Built reusable UI components and responsive layouts.</li>
+                        <li>Integrated REST APIs and implemented authentication.</li>
+                        <li>Fixed bugs and optimized application performance.</li>
+                        <li>Collaborated with the development team on feature implementation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jul 2024 — Sep 2024</span>
+                    <h3>Java Programming Intern · InternPe</h3>
+                    <ul>
+                        <li>Implemented OOP concepts and Java programming assignments.</li>
+                        <li>Developed console-based applications.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jun 2024 — Jul 2024</span>
+                    <h3>Full Stack Intern · Cognifyz</h3>
+                    <ul>
+                        <li>Developed CRUD applications using frontend and backend technologies.</li>
+                        <li>Worked with databases and API integration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">May 2024 — Jun 2024</span>
+                    <h3>Web Development Intern · OctaNet</h3>
+                    <ul>
+                        <li>Developed responsive web pages using HTML, CSS and JavaScript.</li>
+                        <li>Worked with REST APIs and frontend development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education &amp; <span>Achievements</span></h2>
+
+        <div class="education-container">
+            <div class="education-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>Master of Computer Application</h3>
+                <p class="edu-sub">Trident Academy of Technology</p>
+                <p class="edu-meta">09/2023 — 2025 &nbsp;·&nbsp; 9 CGPA</p>
+            </div>
+            <div class="education-box">
+                <i class='bx bxs-graduation'></i>
+                <h3>Bachelor of Science, Chemistry</h3>
+                <p class="edu-sub">Berhampur University</p>
+                <p class="edu-meta">09/2020 — 06/2023 &nbsp;·&nbsp; 9.1 CGPA</p>
             </div>
         </div>
 
-
-        <div class="skills-container">
-            <div class="skills-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>HTML ,CSS ,JAVA SCRIPT</h3>
-                <p>I have a good knowledge about HTML,CSS,JAVASCRIPT.HTML defines the structure of your content, CSS
-                    determines the style and layout, and JavaScript makes the content interactive</p>
-                <a href="#" class="btn">Read More</a>
+        <div class="achievements-container">
+            <div class="achievement-col">
+                <h3><i class='bx bx-trophy'></i> Awards</h3>
+                <ul>
+                    <li>Smart India Hackathon 2024</li>
+                    <li>Cloud Computing (01/2024 — 03/2024)</li>
+                    <li>Management Information System (07/2024 — 10/2024)</li>
+                </ul>
             </div>
-
-            <div class="skills-container">
-                <div class="skills-box">
-                    <i class="bx bx-code-alt"></i>
-                    <h3>BOOTSTRAP</h3>
-                    <p>I have a basic knoeledge about Bootstrap .It is the most popular open-source front-end framework
-                        for simplified web development.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-
-                <div class="skills-container">
-                    <div class="skills-box">
-                        <i class="bx bx-code-alt"></i>
-                        <h3>MYSQL</h3>
-                        <p>MySQL is a relational database management system (RDBMS) developed by Oracle that is based on
-                            structured query language (SQL)</p>
-                        <a href="#" class="btn">Read More</a>
-                    </div>
-                </div>
+            <div class="achievement-col">
+                <h3><i class='bx bx-certification'></i> Certificates</h3>
+                <ul>
+                    <li>Python Industry Training Participation</li>
+                    <li>SQL Bootcamp</li>
+                    <li>Full Stack Development Intern Certificate</li>
+                    <li>Internet of Things (01/2024 — 04/2024)</li>
+                    <li>TATA Imagination Challenge</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section class="projects" id="projects">
-        <h2 class="heading">Latest <span>Project</span></h2>
+        <h2 class="heading">Latest <span>Projects</span></h2>
 
-        <div class="projects-conteiner">
+        <div class="projects-container">
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Umv4Jyt6ZptSyMfSODPLV_JGuS4nUscMlvhY00FwHWkrPTy0Hhmq0gLao0m_uNJgCog&usqp=CAU"
-                    alt="">
-                <p>Leading Page</p>
+                <i class='bx bx-test-tube'></i>
+                <h3>Diagnostic Lab Booking &amp; Reporting</h3>
+                <p>Diagnostic booking app with lab search, test booking, payments and digital reports.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT88Zm6z7mcemKh8YtyqS7hdwsTHar062A1g&s" alt="">
-                <p>Portfolio</p>
+                <i class='bx bx-id-card'></i>
+                <h3>Digital Visiting Card App</h3>
+                <p>Flutter-based digital business card app with customizable profiles and QR code sharing.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjp1fINmrv2TJn7MfDnSaASzVwJkolo1VUQ&s" alt="">
-                <p>Weather App</p>
+                <i class='bx bx-package'></i>
+                <h3>Stock Good — Inventory Management</h3>
+                <p>Cross-platform inventory app with auth, barcode scanning, stock tracking and AI receipt extraction.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ40Srnz7-66aZY6JfhjZsssEbQzPAqie33g&s" alt="">
-                <p>Register Form</p>
+                <i class='bx bxl-whatsapp'></i>
+                <h3>WhatsApp Clone App</h3>
+                <p>Real-time chat application with authentication and messaging.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVe4gMCR1w8HvOLU2ibivRuUnJ_qtQCem3g&s" alt="">
-                <p>ToDo List</p>
+                <i class='bx bx-food-menu'></i>
+                <h3>Pizza Ordering Platform</h3>
+                <p>Food ordering app with cart and order management.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWcYi00NpZxYWVCk5fKbSFMB_XpH3rDUDLRg&s" alt="">
-                <p>Blog Website</p>
+                <i class='bx bxs-map'></i>
+                <h3>Google Map App</h3>
+                <p>App for location search, maps and navigation.</p>
             </div>
             <div class="projects-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztNSedQhmfkm4idQ6UwxjBPDTcr3uuOxRIg&s" alt="">
-                <p>Money Tracker</p>
+                <i class='bx bx-calculator'></i>
+                <h3>Calculator App</h3>
+                <p>Calculator for basic and advanced arithmetic operations.</p>
             </div>
+            <a class="projects-box" href="https://github.com/70mansipatro/smart-attendance" target="_blank" rel="noopener">
+                <i class='bx bx-user-check'></i>
+                <h3>Smart Attendance System</h3>
+                <p>Attendance tracking system for students or employees with automated marking and records.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/closet_ai" target="_blank" rel="noopener">
+                <i class='bx bxs-t-shirt'></i>
+                <h3>Closet AI</h3>
+                <p>Flutter wardrobe assistant that helps organize outfits and suggests combinations.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/simpleprojectmanagementapp" target="_blank" rel="noopener">
+                <i class='bx bx-task'></i>
+                <h3>Project Management App</h3>
+                <p>Task and project tracking tool with boards, assignments and progress tracking.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/netflix" target="_blank" rel="noopener">
+                <i class='bx bx-movie-play'></i>
+                <h3>Netflix Clone</h3>
+                <p>Streaming platform UI clone with content browsing and a responsive video-style layout.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/moneytrack" target="_blank" rel="noopener">
+                <i class='bx bx-wallet'></i>
+                <h3>MoneyTrack</h3>
+                <p>Personal finance tracker for logging expenses, income and spending trends.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/ChatBot" target="_blank" rel="noopener">
+                <i class='bx bx-message-rounded-dots'></i>
+                <h3>AI ChatBot</h3>
+                <p>Conversational chatbot built in Python with natural language responses.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/weatherapp" target="_blank" rel="noopener">
+                <i class='bx bx-cloud'></i>
+                <h3>Weather App</h3>
+                <p>Real-time weather lookup app showing forecasts by city using a weather API.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/RCA-project" target="_blank" rel="noopener">
+                <i class='bx bx-search-alt'></i>
+                <h3>Root Cause Analysis Tool</h3>
+                <p>Python tool for analyzing incident data and identifying root causes.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/bookstore" target="_blank" rel="noopener">
+                <i class='bx bx-book'></i>
+                <h3>Bookstore App</h3>
+                <p>Online bookstore with catalog browsing, cart and checkout flow.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/HOUSE_PRICE_PREDICTION" target="_blank" rel="noopener">
+                <i class='bx bx-line-chart'></i>
+                <h3>House Price Prediction</h3>
+                <p>Machine learning model predicting house prices from historical housing data.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/email_spam_classifier" target="_blank" rel="noopener">
+                <i class='bx bx-envelope-open'></i>
+                <h3>Email Spam Classifier</h3>
+                <p>ML classifier that detects spam emails using NLP-based text processing.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/hospital_management_system" target="_blank" rel="noopener">
+                <i class='bx bx-plus-medical'></i>
+                <h3>Hospital Management System</h3>
+                <p>Web app for managing patient records, appointments and hospital staff.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/ca-rental-system" target="_blank" rel="noopener">
+                <i class='bx bx-car'></i>
+                <h3>Car Rental System</h3>
+                <p>Java-based car rental platform with vehicle listing and booking management.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/currency_converter" target="_blank" rel="noopener">
+                <i class='bx bx-dollar-circle'></i>
+                <h3>Currency Converter</h3>
+                <p>Real-time currency conversion tool supporting multiple exchange rates.</p>
+            </a>
+            <a class="projects-box" href="https://github.com/70mansipatro/J-QuizApp" target="_blank" rel="noopener">
+                <i class='bx bx-help-circle'></i>
+                <h3>J-Quiz App</h3>
+                <p>Interactive quiz application with scoring and multiple question categories.</p>
+            </a>
+        </div>
+
+        <div class="projects-more">
+            <a href="https://github.com/70mansipatro?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">View More on GitHub</a>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact<span> Me!</span></h2>
+        <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-               <input type="text" placeholder="Full Name">
-               <input type="email" placeholder="Email Address">
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:manasipatro3@gmail.com" class="contact-info-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>manasipatro3@gmail.com</span>
+                </a>
+                <a href="tel:+919337131520" class="contact-info-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+91 93371 31520</span>
+                </a>
+                <a href="https://github.com/70mansipatro" target="_blank" rel="noopener" class="contact-info-item">
+                    <i class='bx bxl-github'></i>
+                    <span>github.com/70mansipatro</span>
+                </a>
+                <a href="https://www.linkedin.com/in/t-b-manasi-patro-6a5086290" target="_blank" rel="noopener" class="contact-info-item">
+                    <i class='bx bxl-linkedin'></i>
+                    <span>LinkedIn Profile</span>
+                </a>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-             </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-        </form>
+
+            <form action="mailto:manasipatro3@gmail.com" method="get" enctype="text/plain">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
     </section>
-     
+
     <footer class="footer">
-    <div class="footer-text">
-        <p>Copyright &copy; 2024 by Manasi | All Rights Reserved.</p>
-    </div>
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Manasi Patro | All Rights Reserved.</p>
+        </div>
 
-    <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
-
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

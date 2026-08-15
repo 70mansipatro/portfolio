@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasi Patro | Resume</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --ink: #1a1f2b;
+            --muted: #5a6270;
+            --accent: #0aa8b5;
+            --line: #e3e7ec;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: var(--ink);
+            padding: 3rem 1.5rem;
+        }
+
+        .toolbar {
+            max-width: 850px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toolbar a,
+        .toolbar button {
+            font-size: 1.4rem;
+            padding: .9rem 1.8rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: 600;
+            border: none;
+        }
+
+        .back-link {
+            background: transparent;
+            color: var(--ink);
+            border: .1rem solid var(--line) !important;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .print-btn {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .08);
+            padding: 3.5rem 4rem;
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: .2rem solid var(--accent);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .resume-header h1 {
+            font-size: 2.6rem;
+        }
+
+        .resume-header p {
+            color: var(--muted);
+            font-size: 1.3rem;
+            margin-top: .5rem;
+        }
+
+        .contact-line {
+            font-size: 1.2rem;
+            color: var(--muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: .8rem;
+        }
+
+        .contact-line span {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+        }
+
+        .contact-line i {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 1.8rem;
+        }
+
+        h2.section-title {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            color: var(--accent);
+            margin-bottom: .8rem;
+            border-bottom: .1rem solid var(--line);
+            padding-bottom: .4rem;
+        }
+
+        p.objective {
+            font-size: 1.3rem;
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 2rem;
+        }
+
+        .item-title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.35rem;
+            font-weight: 600;
+        }
+
+        .item-sub {
+            font-size: 1.2rem;
+            color: var(--muted);
+            margin-bottom: .5rem;
+        }
+
+        ul.bullets {
+            list-style: none;
+            margin-bottom: 1.2rem;
+        }
+
+        ul.bullets li {
+            font-size: 1.25rem;
+            color: var(--ink);
+            padding-left: 1.4rem;
+            position: relative;
+            margin-bottom: .35rem;
+            line-height: 1.5;
+        }
+
+        ul.bullets li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: .7rem;
+            width: .5rem;
+            height: .5rem;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .skill-row {
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+            line-height: 1.6;
+        }
+
+        .skill-row b {
+            color: var(--ink);
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .6rem;
+        }
+
+        .tag {
+            background: #eef9fa;
+            color: var(--accent);
+            font-size: 1.15rem;
+            padding: .3rem 1rem;
+            border-radius: 1.5rem;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .toolbar {
+                display: none;
+            }
+
+            .resume {
+                box-shadow: none;
+                padding: 1rem 0;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .resume {
+                padding: 2rem;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar">
+        <a href="index.html" class="back-link"><i class='bx bx-arrow-back'></i> Back to Portfolio</a>
+        <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <div class="resume">
+        <div class="resume-header">
+            <div>
+                <h1>T.B Manasi Patro</h1>
+                <p>Flutter Developer</p>
+                <div class="contact-line">
+                    <span><i class='bx bx-envelope'></i> manasipatro3@gmail.com</span>
+                    <span><i class='bx bx-phone'></i> 9337131520, 8984196560</span>
+                    <span><i class='bx bxl-github'></i> github.com/70mansipatro</span>
+                    <span><i class='bx bxl-linkedin'></i> linkedin.com/in/t-b-manasi-patro-6a5086290</span>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2 class="section-title">Career Objective</h2>
+            <p class="objective">Passionate Flutter Developer with experience in building cross-platform mobile
+                applications for Android, iOS, and Web. Skilled in Flutter, Dart, Node.js, REST APIs, and MongoDB.
+                Seeking an entry-level Flutter Developer role to build scalable, user-friendly mobile applications
+                while contributing to innovative development teams.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="item-title"><span>Master of Computer Application — Trident Academy of Technology</span><span>9 CGPA</span></div>
+            <div class="item-sub">09/2023 – 2025</div>
+            <div class="item-title"><span>Bachelor of Science, Chemistry — Berhampur University</span><span>9.1 CGPA</span></div>
+            <div class="item-sub">09/2020 – 06/2023</div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skill-row"><b>Languages:</b> Dart, Java, JavaScript, Python, HTML, CSS</div>
+            <div class="skill-row"><b>Mobile Development:</b> Flutter, Android, iOS, Web, Responsive UI</div>
+            <div class="skill-row"><b>Backend:</b> Node.js, Express.js, REST API</div>
+            <div class="skill-row"><b>Databases:</b> MongoDB, Firebase, MySQL</div>
+            <div class="skill-row"><b>State Management:</b> Provider, GetX, Riverpod</div>
+            <div class="skill-row"><b>Concepts:</b> JWT Authentication, RBAC, CRUD, API Integration, Barcode Scanner, QR Code, Google Maps</div>
+            <div class="skill-row"><b>AI & LLM Integration:</b> OpenAI API, Google Gemini API, Prompt Engineering, OCR-based Document Processing, AI-powered Invoice & Receipt Parsing</div>
+            <div class="skill-row"><b>IDE & Tools:</b> VS Code, IntelliJ IDEA, Android Studio</div>
+            <div class="skill-row"><b>Version Control & DevOps:</b> Git, GitHub, CI/CD Pipelines</div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="item-title"><span>Software Developer — Intelibytes Tech</span><span>11/25 – Present</span></div>
+            <ul class="bullets">
+                <li>Developed Flutter applications for Android, iOS, and Web.</li>
+                <li>Built reusable UI components and responsive layouts.</li>
+                <li>Integrated REST APIs and implemented authentication.</li>
+                <li>Fixed bugs and optimized application performance.</li>
+                <li>Collaborated with the development team for feature implementation.</li>
+            </ul>
+
+            <div class="item-title"><span>Web Development Intern — OctaNet</span><span>5/24 – 6/24</span></div>
+            <ul class="bullets">
+                <li>Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+                <li>Worked with REST APIs and frontend development.</li>
+            </ul>
+
+            <div class="item-title"><span>Full Stack Intern — Cognifyz</span><span>6/24 – 7/24</span></div>
+            <ul class="bullets">
+                <li>Developed CRUD applications using frontend and backend technologies.</li>
+                <li>Worked with databases and API integration.</li>
+            </ul>
+
+            <div class="item-title"><span>Java Programming Intern — InternPe</span><span>7/24 – 9/24</span></div>
+            <ul class="bullets">
+                <li>Implemented OOP concepts and Java programming assignments.</li>
+                <li>Developed console-based applications.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Project Details</h2>
+            <ul class="bullets">
+                <li><b>Diagnostic Lab Booking & Reporting Platform</b> — Built a diagnostic booking app with lab search, test booking, payments, and digital reports.</li>
+                <li><b>Digital Visiting Card App</b> — Built a Flutter-based digital business card app with customizable profiles, responsive UI, and QR code sharing.</li>
+                <li><b>Stock Good – Inventory Management System</b> — Built a cross-platform inventory management app with authentication, barcode scanning, stock tracking, and AI-powered receipt extraction.</li>
+                <li><b>WhatsApp Clone App</b> — Real-time chat app with authentication and messaging.</li>
+                <li><b>Pizza Ordering Platform</b> — Food ordering app with cart and order management.</li>
+                <li><b>Google Map App</b> — App for location search, maps, and navigation.</li>
+                <li><b>Calculator App</b> — Calculator for basic and advanced arithmetic operations.</li>
+            </ul>
+        </section>
+
+        <div class="grid-2">
+            <section>
+                <h2 class="section-title">Awards</h2>
+                <ul class="bullets">
+                    <li>Smart India Hackathon 2024</li>
+                    <li>Cloud Computing (01/2024 – 03/2024)</li>
+                    <li>Management Information System (07/24 – 10/24)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">Certificates</h2>
+                <ul class="bullets">
+                    <li>Python Industry Training Participation</li>
+                    <li>SQL Bootcamp</li>
+                    <li>Full Stack Development Intern Certificate</li>
+                    <li>Internet of Things (01/2024 – 04/2024)</li>
+                    <li>TATA Imagination Challenge</li>
+                </ul>
+            </section>
+        </div>
+
+        <section>
+            <h2 class="section-title">Interests</h2>
+            <div class="tag-list">
+                <span class="tag">Exploring new places</span>
+                <span class="tag">Drawing</span>
+                <span class="tag">Photography</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
