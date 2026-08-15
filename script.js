@@ -31,13 +31,24 @@ window.addEventListener('scroll', () => {
 });
 
 const revealTargets = document.querySelectorAll(
-    '.about-content, .about-img, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .contact-container'
+    '.heading, .about-content, .about-img, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .contact-container'
 );
-revealTargets.forEach(el => el.classList.add('reveal'));
 
-requestAnimationFrame(() => {
-    revealTargets.forEach(el => el.classList.add('show'));
+revealTargets.forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.setProperty('--delay', `${(i % 6) * 0.08}s`);
 });
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+revealTargets.forEach(el => revealObserver.observe(el));
 
 const typingRoles = ['Flutter Developer', 'Mobile App Developer', 'AI Integration Enthusiast', 'Full Stack Learner'];
 const typingEl = document.querySelector('.multiple-text');
