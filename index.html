@@ -7,15 +7,41 @@
     <title>Manasi Patro | Mobile App &amp; Python Developer</title>
     <meta name="description" content="Manasi Patro - Mobile App Developer (Flutter) and Python Developer building cross-platform apps, FastAPI backends and AI/LLM-powered tools.">
 
+    <meta name="theme-color" content="#05070d">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="#home" class="logo">Manasi<span>.</span></a>
+    <!-- Animated background: neural network canvas, grid, glow orbs, drifting code -->
+    <div class="bg-layer" aria-hidden="true">
+        <canvas id="bg-canvas"></canvas>
+        <div class="bg-grid"></div>
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="bg-code">
+            <span style="--x:6%;--d:26s;--delay:0s">&lt;/&gt;</span>
+            <span style="--x:18%;--d:32s;--delay:-8s">Widget build()</span>
+            <span style="--x:31%;--d:28s;--delay:-16s">def predict():</span>
+            <span style="--x:44%;--d:34s;--delay:-4s">{ }</span>
+            <span style="--x:57%;--d:30s;--delay:-20s">await llm.chat()</span>
+            <span style="--x:69%;--d:27s;--delay:-12s">setState(() {})</span>
+            <span style="--x:80%;--d:33s;--delay:-24s">@app.get("/")</span>
+            <span style="--x:91%;--d:29s;--delay:-6s">=&gt;</span>
+            <span style="--x:12%;--d:36s;--delay:-28s">0101</span>
+            <span style="--x:75%;--d:38s;--delay:-30s">AI</span>
+        </div>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+    <header class="header">
+        <a href="#home" class="logo"><span class="logo-mark">&lt;M/&gt;</span><span class="logo-name">Manasi<span class="logo-dot">.</span></span></a>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -26,16 +52,27 @@
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <div class="header-actions">
+            <a href="#contact" class="btn btn-sm">Hire Me</a>
+            <i class='bx bx-menu' id="menu-icon" aria-label="Menu"></i>
+        </div>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Manasi Patro</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Software Developer building cross-platform mobile apps with Flutter for Android, iOS and Web, and
-                Python backends, automation workflows and AI/LLM-powered tools with FastAPI, Flask and modern
-                frameworks.</p>
+            <div class="status-badge"><span class="pulse"></span> Open to new opportunities</div>
+            <h3 class="hello">Hello, It's Me</h3>
+            <h1><span class="gradient-text">Manasi Patro</span></h1>
+            <h3 class="role">And I'm a <span class="multiple-text"></span></h3>
+            <p>Software Developer building cross-platform mobile apps with <strong>Flutter</strong> for Android, iOS
+                and Web, and <strong>Python</strong> backends, automation workflows and <strong>AI/LLM-powered</strong>
+                tools with FastAPI, Flask and modern frameworks.</p>
+
+            <div class="btn-group">
+                <a href="resume.html" class="btn" target="_blank" rel="noopener"><i class='bx bx-download'></i> Download Resume</a>
+                <a href="#projects" class="btn btn-outline"><i class='bx bx-grid-alt'></i> View Projects</a>
+            </div>
 
             <div class="social-media">
                 <a href="https://github.com/70mansipatro" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
@@ -43,19 +80,53 @@
                 <a href="mailto:manasipatro3@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
                 <a href="tel:+919337131520" aria-label="Phone"><i class='bx bx-phone'></i></a>
             </div>
-
-            <div class="btn-group">
-                <a href="resume.html" class="btn" target="_blank" rel="noopener">Download Resume</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
         </div>
 
         <div class="home-img">
+            <div class="orbit orbit-1"><span></span></div>
+            <div class="orbit orbit-2"><span></span></div>
             <div class="hero-portrait">
                 <img src="images/hero-portrait.png" alt="Manasi Patro">
             </div>
+
+            <div class="float-chip chip-flutter"><i class='bx bxl-flutter'></i> Flutter</div>
+            <div class="float-chip chip-python"><i class='bx bxl-python'></i> Python</div>
+            <div class="float-chip chip-ai"><i class='bx bx-bot'></i> AI Agents</div>
+
+            <div class="code-card">
+                <div class="code-head">
+                    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                    <em>developer.dart</em>
+                </div>
+<pre><code><span class="k">class</span> <span class="t">Manasi</span> <span class="k">extends</span> <span class="t">Dev</span> {
+  <span class="v">stack</span> = [<span class="s">'Flutter'</span>, <span class="s">'Python'</span>, <span class="s">'AI'</span>];
+  <span class="v">ships</span> = [<span class="s">'Android'</span>, <span class="s">'iOS'</span>, <span class="s">'Web'</span>];
+}</code></pre>
+            </div>
         </div>
+
+        <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
     </section>
+
+    <div class="tech-marquee" aria-label="Tech stack">
+        <div class="marquee-track">
+            <span><i class='bx bxl-flutter'></i> Flutter</span>
+            <span><i class='bx bx-code-curly'></i> Dart</span>
+            <span><i class='bx bxl-python'></i> Python</span>
+            <span><i class='bx bx-bolt-circle'></i> FastAPI</span>
+            <span><i class='bx bxl-firebase'></i> Firebase</span>
+            <span><i class='bx bx-brain'></i> LLMs</span>
+            <span><i class='bx bx-bot'></i> AI Agents</span>
+            <span><i class='bx bxl-react'></i> React</span>
+            <span><i class='bx bxl-nodejs'></i> Node.js</span>
+            <span><i class='bx bxl-javascript'></i> JavaScript</span>
+            <span><i class='bx bxl-mongodb'></i> MongoDB</span>
+            <span><i class='bx bxl-postgresql'></i> PostgreSQL</span>
+            <span><i class='bx bxl-docker'></i> Docker</span>
+            <span><i class='bx bxl-kubernetes'></i> Kubernetes</span>
+            <span><i class='bx bxl-git'></i> Git</span>
+        </div>
+    </div>
 
     <section class="about" id="about">
         <div class="about-img">
@@ -67,6 +138,7 @@
         </div>
 
         <div class="about-content">
+            <p class="section-tag"><b>01</b> // who I am</p>
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Mobile App &amp; Python Developer</h3>
             <p>Software Developer with experience in Flutter, backend development, REST APIs, databases and AI/LLM
@@ -111,6 +183,7 @@
     </section>
 
     <section class="skills" id="skills">
+        <p class="section-tag"><b>02</b> // tech stack</p>
         <h2 class="heading">My <span>Skills</span></h2>
 
         <div class="skills-container">
@@ -217,6 +290,7 @@
     </section>
 
     <section class="experience" id="experience">
+        <p class="section-tag"><b>03</b> // career path</p>
         <h2 class="heading">My <span>Experience</span></h2>
 
         <div class="timeline">
@@ -271,6 +345,7 @@
     </section>
 
     <section class="projects" id="projects">
+        <p class="section-tag"><b>04</b> // things I built</p>
         <h2 class="heading">My <span>Projects</span></h2>
 
         <div class="project-tabs" role="tablist">
@@ -523,6 +598,7 @@
     </section>
 
     <section class="education" id="education">
+        <p class="section-tag"><b>05</b> // learning</p>
         <h2 class="heading">Education &amp; <span>Achievements</span></h2>
 
         <div class="education-container">
@@ -569,6 +645,7 @@
     </section>
 
     <section class="contact" id="contact">
+        <p class="section-tag"><b>06</b> // get in touch</p>
         <h2 class="heading">Contact <span>Me!</span></h2>
 
         <div class="contact-container">
@@ -595,7 +672,7 @@
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2026 by Manasi Patro | All Rights Reserved.</p>
+            <p>&copy; 2026 <span class="gradient-text">Manasi Patro</span> | All Rights Reserved.</p>
         </div>
 
         <div class="footer-iconTop">
