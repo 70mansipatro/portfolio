@@ -46,7 +46,7 @@ onScroll();
 /* ---------- Scroll reveal ---------- */
 
 const revealTargets = document.querySelectorAll(
-    '.section-tag, .heading, .about-content, .about-img, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .focus-card, .stat-box, .contact-cta, .contact-info-item, .interests, .projects-more'
+    '.section-tag, .heading, .about-content, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .focus-card, .stat-box, .contact-cta, .contact-info-item, .interests, .projects-more'
 );
 
 revealTargets.forEach((el, i) => {
