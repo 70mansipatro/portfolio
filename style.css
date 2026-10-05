@@ -354,6 +354,45 @@ span {
     color: var(--text-muted);
 }
 
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+}
+
+.focus-card {
+    display: flex;
+    gap: 1.4rem;
+    align-items: flex-start;
+    text-align: left;
+    background: var(--card-color);
+    border: .1rem solid rgba(255, 255, 255, .06);
+    border-radius: 1.2rem;
+    padding: 1.8rem;
+    transition: .3s ease;
+}
+
+.focus-card:hover {
+    border-color: var(--main-color);
+}
+
+.focus-card i {
+    font-size: 3.2rem;
+    color: var(--main-color);
+}
+
+.focus-card h4 {
+    font-size: 1.6rem;
+    margin-bottom: .4rem;
+}
+
+.about-content .focus-card p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
 /* ---------- Skills ---------- */
 
 .skills-container {
@@ -575,7 +614,50 @@ span {
     gap: 2.5rem;
 }
 
+.project-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: -1.5rem 0 3.5rem;
+}
+
+.tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .9rem 2.2rem;
+    border-radius: 4rem;
+    background: transparent;
+    color: var(--text-color);
+    border: .2rem solid rgba(15, 220, 235, .3);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.tab-btn i {
+    font-size: 1.8rem;
+}
+
+.tab-btn:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.tab-btn.active {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.projects-box.hidden {
+    display: none;
+}
+
 .projects-box {
+    position: relative;
     display: block;
     background: var(--card-color);
     border: .1rem solid rgba(255, 255, 255, .06);
@@ -605,6 +687,33 @@ span {
 .projects-box p {
     font-size: 1.4rem;
     color: var(--text-muted);
+}
+
+.project-tag {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.1rem;
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    background: var(--main-color-soft);
+    border: .1rem solid rgba(15, 220, 235, .3);
+}
+
+.interests {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 4rem;
+}
+
+.interests .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 1.4rem;
+    padding: .7rem 1.6rem;
 }
 
 .projects-more {
@@ -858,6 +967,7 @@ span {
 .timeline-content ul li:nth-child(4) { transition-delay: .62s; }
 .achievement-col ul li:nth-child(5),
 .timeline-content ul li:nth-child(5) { transition-delay: .7s; }
+.achievement-col ul li:nth-child(6) { transition-delay: .78s; }
 
 .achievement-col h3 i {
     display: inline-block;
@@ -1020,6 +1130,11 @@ span {
 
     .stats {
         justify-content: center;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto 3rem;
     }
 
     .skills-container,

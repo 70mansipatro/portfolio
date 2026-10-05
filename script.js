@@ -31,7 +31,7 @@ window.addEventListener('scroll', () => {
 });
 
 const revealTargets = document.querySelectorAll(
-    '.heading, .about-content, .about-img, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .contact-container'
+    '.heading, .about-content, .about-img, .skills-box, .timeline-item, .education-box, .achievement-col, .projects-box, .focus-card, .contact-container'
 );
 
 revealTargets.forEach((el, i) => {
@@ -50,7 +50,20 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => revealObserver.observe(el));
 
-const typingRoles = ['Flutter Developer', 'Mobile App Developer', 'AI Integration Enthusiast', 'Full Stack Learner'];
+const tabButtons = document.querySelectorAll('.tab-btn');
+const projectCards = document.querySelectorAll('.projects-box[data-category]');
+
+tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        tabButtons.forEach(b => b.classList.toggle('active', b === btn));
+        projectCards.forEach(card => {
+            card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+        });
+    });
+});
+
+const typingRoles = ['Mobile App Developer', 'Flutter Developer', 'Python Developer', 'AI / LLM Developer', 'Backend Developer'];
 const typingEl = document.querySelector('.multiple-text');
 
 if (typingEl) {
